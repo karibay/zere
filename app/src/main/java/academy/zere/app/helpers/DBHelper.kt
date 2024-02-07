@@ -10,13 +10,13 @@ import java.util.LinkedList
 class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         SQLiteOpenHelper(context, "zere", factory, 3){
     override fun onCreate(db: SQLiteDatabase?) {
-        val userQuery = "CREATE TABLE users(" +
+        val userQuery = "CREATE TABLE user(" +
                         "id INTEGER PRIMARY KEY," +
                         "username TEXT," +
                         "password TEXT" +
                     ");"
         val courseQuery = "" +
-                "CREATE TABLE courses(" +
+                "CREATE TABLE course(" +
                     "id INTEGER PRIMARY KEY," +
                     "title TEXT" +
                 ");"

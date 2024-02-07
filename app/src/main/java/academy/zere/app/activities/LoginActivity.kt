@@ -4,6 +4,7 @@ import DBHelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import academy.zere.app.R
+import academy.zere.app.db.CourseDao
 import android.content.Intent
 import android.view.View
 import android.widget.Button
@@ -35,6 +36,14 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             startActivity(intent)
         } else {
             Toast.makeText(this, R.string.error_login_incorrect, Toast.LENGTH_LONG).show()
+        }
+
+        test("one", "two", "three")
+    }
+
+    fun test(vararg words: String){
+        for (word in words){
+
         }
     }
 }
